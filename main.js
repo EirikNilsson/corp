@@ -44,9 +44,16 @@ window.addEventListener("load", () => {
 
 
     }
+    function reset(){
+        ctx.clearRect(0, 0,canvas.width, canvas.height);
+
+
+    }
+
     canvas.addEventListener('mousedown', startposition);
     canvas.addEventListener('mouseup', finishedposition);
     canvas.addEventListener('mousemove', draw);
+    document.getElementById("reset").addEventListener("click", reset);
     
 
 
