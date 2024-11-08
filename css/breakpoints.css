@@ -1,5 +1,5 @@
 body {
-  /* margin-top: 40px; This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
+  
 }
 
 body::before {
@@ -10,6 +10,7 @@ body::before {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 20000;
 }
 
 /* This box class is purely used for explaining how the bootstrap grid system works. */
