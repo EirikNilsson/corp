@@ -10,13 +10,10 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    text-align: center;
+    text-align: LEFT;
     font-size: 18px;
     z-index: 1000; 
 }
-
-
-
 
 #wrapper {
     display: flex;
@@ -48,15 +45,18 @@ nav {
   }
 
   
-  /* Main content area (gray rectangle) */
   #canvas {
     background-color: #f2f2f2;
     width: 100%;
     height: 400px;
     border-radius: 10px;
   }
+
+  #drawSize img {
+    cursor: pointer;
+    margin: 5px;
+}
   
-  /* Right container with two elements (green rectangle and gray circle) */
   .right-container {
     display: flex;
     flex-direction: column;
@@ -64,27 +64,43 @@ nav {
     align-items: center;
   }
   
-  /* Green rectangle */
   .rightBox {
     background-color: #b3c248;
-    width: 150px;
+    width: 300px;
     height: 400px;
     border-radius: 10px;
   }
-  
-  /* Gray circle */
+
   .gray-circle {
-    background-color: #ddd;
-    width: 60px;
-    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;  
+    height: 200px;
     border-radius: 50%;
-  }
+
+}
+
+#chartCanvas {
+    width: 100%;    
+    height: 100%;
+}
   
-  /* Red horizontal rectangle below main content */
   .bottomBox {
     background-color: #e94e47;
     width: 100%;
-    height: 100px;
+    height: 150px;
     border-radius: 10px;
     margin-top: 20px;
+  }
+
+  img {
+    width: 70px;
+  };
+
+  @media (max-width: 768px) {
+    .rightBox {
+  
+      width: 150px;
+    }
   }
