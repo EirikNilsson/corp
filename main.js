@@ -72,6 +72,9 @@ window.addEventListener("load", () => {
     document.getElementById("big").addEventListener("click", () => {
         brushSize = 30;
     });
+    document.getElementById("eraser").addEventListener("click", () => {
+        selectedColor = '#f2f2f2'
+    });
 
     canvas.addEventListener('mousedown', startPosition);
     canvas.addEventListener('mouseup', finishedPosition);
