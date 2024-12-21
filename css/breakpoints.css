@@ -23,6 +23,7 @@ body::before {
   body::before {
     content: "SM";
   }
+    
 }
 
 @media (min-width: 768px) {
